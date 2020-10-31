@@ -1,0 +1,494 @@
+@charset "UTF-8";
+@font-face{
+    font-family: 'Vendetta';
+    src: url(fontes/Vendetta.otf);
+}
+/*Cnfiguração das cores de fundo e dimensões da página*/
+body{
+    width: 100%;
+    margin-left: 0%;
+    margin-top: 0%;
+    background-color: rgb(255, 255, 255);
+}
+/*Barra superior com links de login*/
+div#topContainer{
+    width: 80%;
+    height: 40px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/*Barra superior de login*/
+header{
+    width: 100%;
+    height: 40px;
+    background-color:  rgb(192, 192, 192);
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+/*Área do Menu*/
+nav{
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 100px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    padding-left: 0px;
+    text-align: left;
+    box-shadow: 1px 3px 15px rgba(0, 0, 0, 0.3);
+    z-index: 1;
+}
+/*Lista desordenada de itens de Menu*/
+nav ul{
+    list-style: none;
+    display: inline;
+    padding-left: 0px;
+    margin-left: 12.7%;
+}
+/*Itens de lista de Menu*/
+nav ul li{
+    margin-top: 18px;
+    margin-right: 3%;
+    margin-left: 3%;
+    display: inline-flex;
+}
+/*Links dentro do menu*/
+nav ul li a{
+    margin-left: 0px;
+    text-decoration: none;
+    padding: 10px;
+    color: rgb(165, 165, 165);
+    font-family: sans-serif;
+    transition: 0.3s;
+    font-weight: 900;
+    font-family: 'Vendetta';
+    font-size: 16pt;
+    text-shadow: 1px 3px 6px rgb(192, 192, 192);    
+}
+/*Função de troca de cores de itens ao pasar mouse*/
+nav ul li a:hover{
+    color: red;
+}
+/*Logo dentro do Menu*/
+img.logoIndex{
+    width: 110px;
+    margin-left: 0%;
+    transform: translateX(-50%);
+    margin-top: -50px;
+    position: absolute;
+    padding-right: 90px;
+}
+/*Configurações dos slides*/
+div.slides{
+    border: none;
+    text-decoration: none;
+    outline-style: none;
+    width: 100%;
+    position: relative;
+}
+div.slides div.slide1 img{
+    width: 100%;
+    z-index: 2;
+}
+/*Toda estrutura abaixo do menu*/
+div#containerBox{
+    width: 100%;
+    margin-top: 0px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+div#app{
+    width: 100%;
+}
+/*Quadro onde iremos inserir o painel do sistema*/
+#quadro{
+    background-color: rgb(219, 18, 18);
+    width: 80%;
+    min-height: 300px;
+    margin: 30px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    position: relative;
+    box-shadow: 1px 5px 15px rgba(0, 0, 0, 0.6);
+    padding-bottom: 80px;
+}
+/*Cores de fontes dentro do quadro vermelho*/
+#quadro a{
+    text-decoration: none;
+    color: white;
+}
+/*Painel do sistema*/
+div#sistema{
+    width: 90%;
+    height: auto;
+    background-color: cornsilk;
+    text-align: center;
+    font-size: 50px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    border-radius: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+div#sistemaCliente{
+    width: 90%;
+    height: 970px;
+    background-color: cornsilk;
+    text-align: center;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    border-radius: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+/*Fontes h2 dentro do quadro*/
+#quadro h2{
+    color: white;
+    text-align: center;
+    font-family: 'Vendetta';
+    font-size: 25pt;
+    text-shadow: 1px 3px 10px rgb(121, 41, 4);
+}
+/*Caixa onde iremos inserir o texto sobre a empresa*/
+#sobre{
+    background-color: rgb(219, 92, 18);
+    width: 80%;
+    min-height: 300px;
+    margin: 100px;
+    margin-left: 50%;
+    padding-bottom: 50px;
+    transform: translateX(-50%);
+    position: relative;
+    box-shadow: 1px 5px 15px rgba(0, 0, 0, 0.6);
+}
+/*Fontes h2 dentro da caixa sobre*/
+#sobre h2{
+    color: white;
+    text-align: center;
+    font-family: 'Vendetta';
+    font-size: 25pt;
+    text-shadow: 1px 3px 10px rgb(121, 41, 4);
+}
+/*Fontes p dentro da caixa sobre*/
+#sobre p{
+    color: white;
+    width: 70%;
+    text-align: justify;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    font-size: 16pt;
+}
+/*Configurações do botões de login à direita*/
+#linkLogin{
+    width: 400px;
+    position: relative;
+    margin-top: 0px;
+    float: right;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    font-weight: 900;
+    background-color: rgb(219, 18, 18);
+    border-radius: 20px;
+    transition: 0.6s;
+}
+#linkLogin:hover{
+    background-color: rgb(219, 92, 18);
+    
+}
+/*Configurações do botões de redes sociais à esquerda*/
+div#socialMedia{
+    width: 100px;
+    position: relative;
+    margin-top: 0px;
+    margin-left: 0%;
+    padding: 10px;
+    text-align: center;
+    font-weight: 900;
+    cursor: pointer;
+}
+/*Configurações de Rodapé*/
+footer{
+    background-color: rgb(77, 35, 24);
+    width: 100%;
+    box-shadow: 1px 10px 15px rgba(39, 3, 3, 0.8);
+    color: white;
+}
+/*Div de contato dentr do rodapé*/
+div#contato{
+    width:800px;
+    height:300px;
+    text-align: left;
+    margin-left: 10%;
+    padding-top: 5px;
+    
+  }
+  div#contato p{
+    margin-top: 10px;  
+  }  
+  #contato h3{
+      margin-top: 30px;
+  }
+
+  /****************
+  *****************
+  *****************
+  *****************/
+
+  /*Tela de Login*/
+div#telaLogin{
+    /*Dimensão*/
+    width: 450px;
+    height: 350px;
+    position: absolute;
+    z-index: 50;
+    /*Posição*/
+    margin-left: 50%;
+    transform: translateX(-50%);
+    margin-top: 15%;
+    /*Configuração*/
+    transition: .6s;
+    display: none;
+    background-color: rgba(197, 84, 31,1);
+    box-shadow: 5px 5px 15px 3px rgb(126, 31, 31);
+    border-radius: 5%;
+    justify-content: center;
+    text-decoration: none;
+    outline: none;
+}
+/*Itens de input d Formulário*/
+form.inputLogin{
+    /*Dimensão*/
+    width:300px;
+    height:250px;
+    /*Posição*/
+    margin-left: 44%;
+    transform: translateX(-50%);
+    margin-top: 30px;
+    position: absolute;
+    /*Configuração*/
+}
+/*Configuração texto*/
+form.inputLogin p{
+    color: rgb(255, 255, 255);
+    font-family: 'Arial Black';
+}
+/*Configuração input*/
+form.inputLogin input{
+    width: 350px;
+    height: 38px;
+    outline: none;
+    border: none;
+    
+}
+/*Configuração do botão*/
+form.inputLogin .botao{
+    /*Dimensão*/
+    width: 100px;
+    height: 40px;
+    /*configuração*/
+    background-color: rgb(197, 31, 31);
+    margin: 30px 35px;
+    border-style: none;
+    /*Fonte*/
+    color: white;
+    font-weight: 700;
+    transition: 0.5s;
+    outline: none;
+    cursor: pointer;
+}
+
+.espacobtn{
+    width: 350px;
+    top: 210px;
+    left: 5px;
+    position: absolute;
+}
+
+/****************
+*****************
+*****************
+*****************
+****************/
+
+/*Configurações da tela de cadastro*/
+div#telaCadastro{
+    /*Dimensão*/
+    width: 600px;
+    height: 750px;
+    /*Posição*/
+    margin-left: 50%;
+    transform: translateX(-50%);
+    z-index: 51;
+    margin-top: 3%;
+    /*Configuração*/
+    position: absolute;
+    background-color: rgb(254, 255, 255);
+    box-shadow: 5px 5px 15px 3px rgb(110, 9, 9);
+    border-radius: 5%;
+    justify-content: center;
+    text-decoration: none;
+    outline: none;
+    background-color: rgba(197, 84, 31,1);
+    color: white;
+    padding-bottom: 30px;
+    display: none;
+}
+div#telaCadastro h2{
+    padding-top: 0px;
+    text-align: center;
+}
+div.direita{
+    text-align: left;
+    width: 200px;
+    float: right;
+}
+div.direita input{
+    width: 200px;
+    height: 20px;
+    margin-bottom: 10px;
+    outline: none;
+}
+div.direita label{
+    margin-top: 15px;
+}
+div.esquerda{
+    text-align: left;
+    width: 200px;
+    float: left;
+    margin-left: -6px;
+}
+div.esquerda input{
+    width: 200px;
+    height: 20px;
+    margin-bottom: 10px;
+    outline: none;
+}
+div.esquerda select{
+    width: 200px;
+    height: 20px;
+    margin-bottom: 10px;
+}
+
+#cadEndereco{
+    margin-top: 190px;
+    width:470px;
+    height: 155px;
+    position: absolute;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    border-style: none;
+}
+.cadEnderecoLabel{
+    position: absolute;
+    margin-top: 165px;
+    margin-left: -200px;
+}
+
+/*Itens de input do Formulário*/
+form.inputCadastro{
+    /*Dimensão*/
+    width:470px;
+    height:450px;
+    /*Posição*/
+    margin-left: 50%;
+    transform: translateX(-50%);
+    /*Configuração*/    
+    
+}
+/*Configuração do botão*/
+.botao{
+    /*Dimensão*/
+    width: 100px;
+    height: 40px;
+    /*configuração*/
+    background-color: rgb(197, 31, 31);
+    border: none;
+    border-radius: 5px;
+    margin-right: 50px;
+    margin-left: 50px;
+    /*Fonte*/
+    color: white;
+    font-weight: 700;
+    transition: 0.5s;
+    outline: none;
+    transition: 0.3s;
+    box-shadow: 1px 1px 5px rgb(128, 12, 12);
+    position: relative;
+    cursor: pointer;
+}
+.espacoBotoes{
+    
+    text-align: center;
+    position: absolute;
+    margin-top: 570px;
+    width: 500px;
+    height: 40px;
+}
+.confirmCad{
+    width: 325px;
+    position: absolute;
+    margin-left: 50%;
+    transform: translateX(-55%);
+    margin-top: 380px;
+    text-align: right;    
+}
+.confirmCad input{
+    margin-top: 10px;
+    height: 20px;
+}
+
+div#margem3 {
+    background: #900;
+    color: #FFF;
+    padding: 10px;
+    margin: 10px;
+}
+/*Botão sair*/
+button#botaoSair{
+    position: absolute;
+    margin-top: -8px;
+    margin-left: 10px;
+    background-color: rgb(250, 250, 250);
+    border-radius: 50px;
+    color: white;
+    text-decoration: none;
+    border: none;
+    width: 35px;
+    height:35px;
+    transition: 0.8s;
+    text-align: center;
+    cursor: pointer;
+    outline: none
+}
+
+div#telaLogin a.btnCad{
+    color: white;
+    text-decoration: none;
+    position: absolute;
+    margin-top: 100px;
+    margin-left: 10px;
+}
+form th{
+    background-color: white;
+    border-color: red;
+    border-radius: 10px;
+    border-width: 5px;
+    font-family: 'Tahoma';
+}
+form td{
+    Border:none;
+    padding: 10px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px red; 
+    margin: 5px;
+};
+form table{
+    border: none;
+}
+form input radio{
+    border-bottom-style: solid;
+}
